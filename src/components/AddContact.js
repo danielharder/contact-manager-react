@@ -19,7 +19,6 @@ function AddContact() {
 
     try {
       await datasource.post('/contacts', newContact);
-      navigate('/');  // Navigate back to the contacts list
     } catch (error) {
       console.error('Error creating contact', error);
     }
